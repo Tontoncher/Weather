@@ -21,24 +21,24 @@ export default class FirstScreen extends Component {
                           <FontAwesomeIcon icon={ faTrashAlt } />
                         </button>
 
-        return (
-          <button
-            key={item.name}
-            onClick={() => this.props.onChangeActivePanel(2, item.name)}
-            onDoubleClick={() => this.props.onChangeActivePanel(2, item.name)}
-            className={className}
-          >
-            <span className='name'>
-              { item.name }, {item.sys.country}
-            </span>
-            <div>
-              <span className='temp'>
-                { item.main.temp }°C
-              </span>
-              { deleteButton }
-            </div>
-          </button>
-        )
+        // return (
+        //   <button
+        //     key={item.name}
+        //     onClick={() => this.props.onChangeActivePanel(2, item.name)}
+        //     onDoubleClick={() => this.props.onChangeActivePanel(2, item.name)}
+        //     className={className}
+        //   >
+        //     <span className='name'>
+        //       { item.name }, {item.sys.country}
+        //     </span>
+        //     <div>
+        //       <span className='temp'>
+        //         { item.main.temp }°C
+        //       </span>
+        //       { deleteButton }
+        //     </div>
+        //   </button>
+        // )
       }
 
       return (

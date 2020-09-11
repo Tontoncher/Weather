@@ -13,6 +13,7 @@ export default class Screen extends Component {
     ],
     activePanel: 1,
     activeTown: '',
+    key: ''
   }
 
   onChangeTownList = (value) => {
@@ -21,7 +22,7 @@ export default class Screen extends Component {
   }
   onChangeActiveTown = (value) => {
     this.setState({activeTown: value})
-
+    console.log(this.state.key)
   }
   onChangeActivePanel = (value, name) => {
     this.setState({activePanel: value})
